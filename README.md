@@ -1,7 +1,8 @@
 # **TrellOps**
 This Windows PowerShell is for the management of Trello.
-###28th of May, 2016: Help and examples for this module uploaded.
-###21st of August, 2017: Added Get-TrelloSecret and Get-TrelloKey.
+
+<pre>28th of May, 2016: Help and examples for this module uploaded.
+21st of August, 2017: Added Get-TrelloSecret and Get-TrelloKey</pre>
 
 ##### Written by: Jeff Wouters
 
