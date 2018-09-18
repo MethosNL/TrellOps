@@ -1,8 +1,8 @@
 ﻿function New-Board {
     <#
-      .Synopsis 
+      .Synopsis
        Adds a new Trello Board.
-      .Description 
+      .Description
        Adds a new Trello Board.
     #>
     [cmdletbinding()]
