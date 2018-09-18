@@ -1,8 +1,8 @@
 ﻿function New-Card {
     <#
-      .Synopsis 
+      .Synopsis
        Adds a new Trello Card.
-      .Description 
+      .Description
        Adds a new Trello Card.
     #>
     [cmdletbinding()]
