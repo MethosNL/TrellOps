@@ -1,8 +1,8 @@
 ﻿function Remove-ChecklistItem {
     <#
-      .Synopsis 
+      .Synopsis
        Removes a Trello Checklist Item.
-      .Description 
+      .Description
       Removes a Trello Checklist Item.
     #>
     [cmdletbinding()]
