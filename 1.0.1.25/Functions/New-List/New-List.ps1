@@ -1,8 +1,8 @@
 ﻿function New-List {
     <#
-      .Synopsis 
+      .Synopsis
        Adds a list to a Trello Board.
-      .Description 
+      .Description
        Adds a list to a Trello Board.
     #>
     [cmdletbinding()]
