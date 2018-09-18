@@ -1,8 +1,8 @@
 ﻿function Remove-Card {
     <#
-      .Synopsis 
+      .Synopsis
        Removes a Trello Card.
-      .Description 
+      .Description
       Removes a Trello Card.
     #>
     [cmdletbinding()]
