@@ -1,20 +1,23 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/gy0t1yxqwalbdwpb?svg=true)](https://ci.appveyor.com/project/MethosIT/trellops)
 # **TrellOps**
-This Windows PowerShell is for the management of Trello.
-Help and examples for this module will be uploaded on the 28th of May 2016.
+This Windows PowerShell module is for the management of Trello.
+
+<pre>28th of May, 2016: Help and examples for this module uploaded.
+21st of August, 2017: Added Get-TrelloSecret and Get-TrelloKey</pre>
 
 ##### Written by: Jeff Wouters
 
 ## Example
 This is an example on how you can use this Windows PowerShell module in order to manage your Trello environment.
 
-###Get your token
-Get your secret and key from here: https://trello.com/app-key
-<pre><code>$Secret = "YourSecret"
-$Key = "YourKey"
+###Get your secret
+<pre><code>$Secret = Get-TrelloSecret</code></pre>
 
-$AuthRead = New-TrelloToken -Key $Key -AppName "TrellOpsRead" -Expiration "never" -Scope 'read'
-$AuthWrite = New-TrelloToken -Key $Key -AppName "TrellOpsWrite" -Expiration "never" -Scope 'read,write'
+##Get your key
+<pre><code>$Key = Get-TrelloKey</code></pre>
+
+##Get your token
+<pre><code>$AuthRead = New-TrelloToken -Key $Key -AppName "TrellOpsRead" -Expiration "never" -Scope 'read'
+$AuthWrite = New-TrelloToken -Key $Key -AppName "TrellOpsWrite" -Expiration "never" -Scope 'read,write'</code></pre>
 
 Get-TrelloBoard -Token $AuthRead -All</code></pre>
 
