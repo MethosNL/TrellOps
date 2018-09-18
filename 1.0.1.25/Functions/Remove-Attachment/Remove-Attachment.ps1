@@ -1,8 +1,8 @@
 ﻿function Remove-Attachment {
     <#
-      .Synopsis 
+      .Synopsis
        Removes a Trello Checklist Attachment.
-      .Description 
+      .Description
        Removes a Trello Checklist Attachment.
     #>
     [cmdletbinding()]
