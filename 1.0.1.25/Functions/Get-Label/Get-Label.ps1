@@ -1,8 +1,8 @@
 ﻿function Get-Label {
     <#
-      .Synopsis 
+      .Synopsis
        Gets all labels on a Trello board.
-      .Description 
+      .Description
        Gets all labels on a Trello board.
     #>
     [CmdletBinding(DefaultParameterSetName="All")]
@@ -45,7 +45,7 @@
         try
         {
             $Query = Invoke-RestMethod ("https://api.trello.com/1/boards/$($id)/labels/?token=$($Token.Token)&key=$($Token.AccessKey)")
-            switch ($PsCmdlet.ParameterSetName) 
+            switch ($PsCmdlet.ParameterSetName)
             {
                 "Name"  { $Query | Where-Object { $_.name -eq $Name   }; break }
                 "Color" { $Query | Where-Object { $_.color -eq $Color }; break }

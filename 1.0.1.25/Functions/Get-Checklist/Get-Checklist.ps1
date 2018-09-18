@@ -1,8 +1,8 @@
 ﻿function Get-CheckList {
     <#
-      .Synopsis 
+      .Synopsis
        Gets all Checklists in a Trello card.
-      .Description 
+      .Description
        Gets all Checklists in a Trello card.
     #>
     [CmdletBinding(DefaultParameterSetName="All")]
@@ -38,7 +38,7 @@
         try
         {
             $Query = Invoke-RestMethod -Uri "https://api.trello.com/1/cards/$($Id)/checklists?token=$($Token.Token)&key=$($Token.AccessKey)"
-            switch ($PsCmdlet.ParameterSetName) 
+            switch ($PsCmdlet.ParameterSetName)
             {
                 "Name"  { $Query | Where-Object { $_.name -eq $Name }; break }
                 "All"   { $Query; break }

@@ -1,8 +1,8 @@
 ﻿function Get-Card {
     <#
-      .Synopsis 
+      .Synopsis
        Gets all cards on a Trello board.
-      .Description 
+      .Description
        Gets all cards on a Trello board.
     #>
     [CmdletBinding(DefaultParameterSetName="All")]
@@ -44,7 +44,7 @@
         try
         {
             $Query = Invoke-RestMethod ("https://api.trello.com/1/boards/$($Id)/cards/?token=$($Token.Token)&key=$($Token.AccessKey)")
-            switch ($PsCmdlet.ParameterSetName) 
+            switch ($PsCmdlet.ParameterSetName)
             {
                 "Name"  { $Query | Where-Object { $_.name -eq $Name      }; break }
                 "List"  { $Query | Where-Object { $_.idList -eq $List.id }; break }

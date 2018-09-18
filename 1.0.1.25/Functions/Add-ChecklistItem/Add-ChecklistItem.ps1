@@ -1,8 +1,8 @@
 ﻿function Add-ChecklistItem {
     <#
-      .Synopsis 
+      .Synopsis
        Adds a new Item to a Trello Checklists.
-      .Description 
+      .Description
        Adds a new Item to a Trello Checklists.
     #>
     [cmdletbinding()]

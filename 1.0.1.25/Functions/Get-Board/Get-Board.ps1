@@ -1,8 +1,8 @@
 ﻿function Get-Board {
     <#
-      .Synopsis 
+      .Synopsis
        Gets all your Trello boards.
-      .Description 
+      .Description
        Gets all your Trello boards.
     #>
     [CmdletBinding(DefaultParameterSetName="All")]
@@ -45,16 +45,16 @@
         try
         {
             $Query = Invoke-RestMethod ("https://api.trello.com/1/members/my/boards/?token=$($Token.Token)&key=$($Token.AccessKey)")
-            switch ($PsCmdlet.ParameterSetName) 
+            switch ($PsCmdlet.ParameterSetName)
             {
                 "Name"
                 {
-                    $PSNApplied = $Query | where {$_.name -eq $Name}
+                    $PSNApplied = $Query | Where-Object {$_.name -eq $Name}
                     break
                 }
                 "Id"
                 {
-                    $PSNApplied = $Query | where {$_.id -eq $Id}
+                    $PSNApplied = $Query | Where-Object {$_.id -eq $Id}
                     break
                 }
                 "All"

@@ -1,8 +1,8 @@
 ﻿function Add-Attachment {
     <#
-      .Synopsis 
+      .Synopsis
        Adds an attachment a Trello Card.
-      .Description 
+      .Description
        Adds an attachment a Trello Card.
     #>
     [cmdletbinding()]

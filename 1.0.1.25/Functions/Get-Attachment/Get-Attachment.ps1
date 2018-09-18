@@ -1,8 +1,8 @@
 ﻿function Get-Attachment {
     <#
-      .Synopsis 
+      .Synopsis
        Gets a Trello Checklists Item.
-      .Description 
+      .Description
        Adds a Trello Checklists Item.
     #>
     [cmdletbinding(DefaultParameterSetName="All")]
@@ -38,7 +38,7 @@
         try
         {
             $Query = Invoke-RestMethod -Method "Get" -Uri "https://api.trello.com/1/cards/$($Id)/attachments?token=$($Token.Token)&key=$($Token.AccessKey)"
-            switch ($PsCmdlet.ParameterSetName) 
+            switch ($PsCmdlet.ParameterSetName)
             {
                 "Name"  { $Query | Where-Object { $_.name -eq $Name }; break }
                 "All"   { $Query; break }
