@@ -1,8 +1,8 @@
 ﻿function Get-Member {
     <#
-      .Synopsis 
+      .Synopsis
        Gets member of a Trello board.
-      .Description 
+      .Description
        Gets member of a Trello board.
     #>
     [CmdletBinding(DefaultParameterSetName="UserName")]
@@ -32,7 +32,7 @@
     {
         try
         {
-            switch ($PsCmdlet.ParameterSetName) 
+            switch ($PsCmdlet.ParameterSetName)
             {
                 "Id"       {
                     $Option = $Id
