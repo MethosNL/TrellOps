@@ -1,8 +1,8 @@
 ﻿function New-Label {
     <#
-      .Synopsis 
+      .Synopsis
        Creates a new Trello Label.
-      .Description 
+      .Description
        Creates a new Trello Label.
     #>
     [cmdletbinding()]
