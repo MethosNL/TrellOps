@@ -41,7 +41,7 @@
                 "name" = $Name
                 "pos" = $Position
             }
-            Invoke-RestMethod -Method "Post" -Uri "https://api.trello.com/1/cards/$($Id)/checklists?token=$($Token.Token)&key=$($Token.AccessKey)" -Body $Hash
+            Invoke-RestMethod "Post" -Uri "https://api.trello.com/1/cards/$($Id)/checklists?token=$($Token.Token)&key=$($Token.AccessKey)" -Body $Hash
         }
         catch
         {

@@ -1,8 +1,8 @@
 ﻿function Remove-Label {
     <#
-      .Synopsis 
+      .Synopsis
        Removes a Trello Label.
-      .Description 
+      .Description
        Removes a Trello Label.
     #>
     [cmdletbinding()]
